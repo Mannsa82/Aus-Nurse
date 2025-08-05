@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AusNurse Prep – NCLEX & OSCE Training</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .hero-bg { background-image: url('images/hero.jpg'); background-size: cover; background-position: center; }
+    .form-input:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); }
+  </style>
+</head>
+<body class="text-gray-800">
+  <!-- Header and Hero -->
+  <header class="hero-bg text-white py-32 px-6">
+    <div class="max-w-4xl mx-auto text-center bg-black bg-opacity-50 p-8 rounded-lg">
+      <img src="images/logo.png" class="h-20 mx-auto mb-6" alt="AusNurse Logo" />
+      <h1 class="text-5xl font-extrabold leading-tight mb-4">AusNurse Prep</h1>
+      <p class="text-xl mb-6">Your Gateway to AHPRA Registration – NCLEX & OSCE Training for IQNMs</p>
+      <a href="#eoi" class="bg-yellow-400 text-gray-900 px-8 py-3 rounded shadow-md hover:bg-yellow-300 font-semibold">Register Your Interest</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="py-20 bg-white px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4 text-blue-700">About AusNurse Prep</h2>
+    <p class="max-w-3xl mx-auto text-lg">We deliver face-to-face preparatory courses to help IQNMs succeed in NCLEX & OSCE exams and gain AHPRA registration. Not affiliated with AHPRA, NMBA, or Pearson VUE.</p>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="py-20 bg-blue-50 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10 text-blue-700">Our Courses</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="p-6 border rounded-lg shadow-lg bg-white">
+          <h3 class="text-xl font-semibold text-blue-800">NCLEX-RN Prep</h3>
+          <p>SCORM-ready modules with mock tests tailored to Australian clinical contexts.</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-lg bg-white">
+          <h3 class="text-xl font-semibold text-blue-800">OSCE Simulation</h3>
+          <p>Hands-on lab training with simulators and clinical roleplays conducted face-to-face.</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-lg bg-white">
+          <h3 class="text-xl font-semibold text-blue-800">Bundled Program</h3>
+          <p>Get both NCLEX + OSCE at discounted rates, includes certification and career support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-white px-6 text-center">
+    <h2 class="text-4xl font-bold text-blue-700 mb-10">What Our Students Say</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-blue-100 p-6 rounded shadow">
+        <p>"AusNurse Prep gave me confidence to pass NCLEX on my first try!"</p>
+        <p class="mt-4 font-bold">– Maria, Philippines</p>
+      </div>
+      <div class="bg-blue-100 p-6 rounded shadow">
+        <p>"The OSCE labs were realistic and supportive. Highly recommended."</p>
+        <p class="mt-4 font-bold">– Dinesh, India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers -->
+  <section class="py-20 section-bg px-6 text-center">
+    <h2 class="text-4xl font-bold text-blue-700 mb-10">Meet Our Trainers</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div>
+        <img src="images/trainer1.jpg" class="w-40 h-40 rounded-full mx-auto mb-4" />
+        <p class="font-semibold">Jane Holloway, RN</p>
+        <p>15+ years in clinical education & exam readiness</p>
+      </div>
+      <div>
+        <img src="images/trainer2.jpg" class="w-40 h-40 rounded-full mx-auto mb-4" />
+        <p class="font-semibold">Dr. Rajeev Menon</p>
+        <p>Expert in OSCE station simulation and coaching</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Interest Form -->
+  <section id="eoi" class="py-20 px-6 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6 text-blue-700">Register Your Interest</h2>
+      <form class="space-y-4 max-w-xl mx-auto text-left" name="eoi-form" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded form-input" required>
+        <input type="email" name="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded form-input" required>
+        <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded form-input">
+        <textarea name="message" placeholder="Message or Question (optional)" class="w-full p-3 border border-gray-300 rounded form-input" rows="4"></textarea>
+        <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-600 font-semibold">Submit Interest</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-blue-900 text-white text-sm">
+    <p>&copy; 2025 AusNurse Prep. All rights reserved.</p>
+    <p>Non-accredited preparatory training. Not affiliated with AHPRA, NMBA, or Pearson VUE.</p>
+  </footer>
+</body>
+</html>
